@@ -1,6 +1,7 @@
 <?php include_once '../sistem/koneksi.php' ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/fonts.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="icon" href="../assets/img/logokecil.png" type="image/logokecil.png"/>
+    <link rel="icon" href="../assets/img/logokecil.png" type="image/logokecil.png" />
 </head>
+
 <body class="bg-light">
     <div class="container-fluid mt-5">
         <div class="row mt-2">
@@ -24,7 +26,7 @@
                 <div class="card shadow">
                     <div class="card-body">
                         <div class="card-title text-center"><small>Masuk Untuk Melihat Status Pesanan</small></div>
-                        <?php if (@$_SESSION['pesan']): ?>
+                        <?php if (@$_SESSION['pesan']) : ?>
                             <div class="alert alert-<?= $_SESSION['pesan']['status'] == 'error' ? 'danger' : $_SESSION['pesan']['status'] ?> alert-dismisable fade show" role="alert">
                                 <button class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
@@ -51,7 +53,7 @@
                             </div>
                             <div class="form-group">
                                 <a href="./register.php"> Belum memiliki akun? Daftar disini <i class="fa fa-angle-double-left">
-                                </i></a>
+                                    </i></a>
                             </div>
                         </form>
                     </div>
@@ -67,4 +69,5 @@
     <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
     <script src="../assets/js/core/bootstrap.min.js"></script>
 </body>
+
 </html>

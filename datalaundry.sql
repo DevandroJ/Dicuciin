@@ -43,7 +43,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id_admin`, `nama`, `jenis_kelamin`, `email`, `telp`, `password`, `level`) VALUES
-('OP001', 'Administrator', 'L', 'admin@maacilaundry.com', '0813241809', '21232f297a57a5a743894a0e4a801fc3', 'Admin'),
+('OP001', 'Administrator', 'L', 'admin@dicuciin.com', '0813241809', '21232f297a57a5a743894a0e4a801fc3', 'Admin'),
 ('OP002', ' Operator 1', 'L', 'operator.1@mail.com', '081231012321', '6ebbdc9b5f63b4fa8ce2221a2dc00986', 'Pegawai'),
 ('OP003', 'Operator 2', 'L', 'operator.2@mail.com', '081241282920', '830cee9a8ce338f53d8459e9c589d9e8', 'Pegawai');
 
@@ -200,7 +200,7 @@ CREATE TABLE `info_toko` (
 --
 
 INSERT INTO `info_toko` (`nama_toko`, `tentang`, `alamat`, `email`, `telp`, `fax`, `rek`, `facebook`, `twitter`, `instagram`) VALUES
-('Maaci Laundry', '<div class=\"row\">\r\n<div class=\"col-sm-12 col-md-6\"><img src=\"http://localhost/project/laundry/assets/vendor/source/Screenshot%20(1).png\" alt=\"\" width=\"100%\" /></div>\r\n<div class=\"col-sm-12 col-md-6\">\r\n<p>Maaci Laundry adalah jasa laundry online yang murah meriah kerena mendukung fitur XXX dan XXX yang memudahkan kalian dalam membersihkan segala sesuatunya.</p>\r\n</div>\r\n</div>', 'Jl. Raya Bojongsoang, Area Telkom University Kabupaten Bandung Selatan no.99', 'info@maacilaundry.com', '085267445566', '02289234723', '', 'https://facebook.com/maacilaundry', 'https://twitter.com/maacilaundry', 'https://instagram.com/maacilaundry');
+('Dicuciin', 'Welcome to the best laundry in the town! Sibuk kerja sampai lupa untuk nyuci? atau males ke tempat laundry buat nyuci? atau emang kamu males nyuci? Tenang sekarang ada DICUCIIN. satu-satunya tempat laundry khusus orang malas!', 'Jl. Raya Bojongsoang, Area Telkom University Kabupaten Bandung Selatan no.99', 'info@dicuciin.com', '085267445566', '02289234723', '', 'https://facebook.com/dicuciin', 'https://twitter.com/dicuciin', 'https://instagram.com/dicuciin');
 
 -- --------------------------------------------------------
 

@@ -1,11 +1,12 @@
 <?php include_once 'sistem/content.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Maaci Laundry</title>
+	<title>Dicuciin Admin Panel</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="../assets/img/logokecil.png" type="image/logokecil.png"/>
+	<link rel="icon" href="../assets/img/logokecil.png" type="image/logokecil.png" />
 
 	<!-- Fonts and icons -->
 	<!-- <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
@@ -21,21 +22,22 @@
 
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/atlantis.min.css">
+	<link rel="stylesheet" href="../assets/css/atlantis.min.css">
 	<link rel="stylesheet" href="../assets/css/fonts.min.css">
 
 	<!-- CSS Plugins -->
 	<link rel="stylesheet" href="../assets/js/plugin/select2/css/select2.min.css">
-	
+
 	<!-- Custom -->
 	<link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 	<div class="wrapper">
 		<div class="main-header">
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="blue">
-				
+
 				<a href="index.php" class="logo text-white text-uppercase">
 					<img src="../assets/img/logo23.png" alt="Logo Image" style="width: 90%">
 				</a>
@@ -54,10 +56,10 @@
 
 			<!-- Navbar Header -->
 			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
-				
+
 				<div class="container-fluid">
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
-						
+
 					</ul>
 				</div>
 			</nav>
@@ -65,7 +67,7 @@
 		</div>
 
 		<!-- Sidebar -->
-		<div class="sidebar sidebar-style-2">			
+		<div class="sidebar sidebar-style-2">
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
 					<div class="user">
@@ -105,49 +107,43 @@
 								<p>Dashboard</p>
 							</a>
 						</li>
-                        <?php if ($_SESSION['level'] == 'Admin'): ?>
-						<li class="nav-item <?= @$pt_active ?>">
-							<a href="index.php?page=profil_toko">
-								<i class="fas fa-store-alt"></i>
-								<p>Profil Toko</p>
-							</a>
-                        </li>
-				
-                        <li class="nav-item <?= @$p_active ?>">
-							<a href="index.php?page=pegawai">
-								<i class="fas fa-user"></i>
-								<p>Pegawai</p>
-							</a>
-                        </li>
-                        <?php endif; ?>
+						<?php if ($_SESSION['level'] == 'Admin') : ?>
+
+							<li class="nav-item <?= @$p_active ?>">
+								<a href="index.php?page=pegawai">
+									<i class="fas fa-user"></i>
+									<p>Pegawai</p>
+								</a>
+							</li>
+						<?php endif; ?>
 						<li class="nav-item <?= @$m_active ?>">
 							<a href="index.php?page=member">
 								<i class="fas fa-users"></i>
 								<p>Member</p>
 							</a>
 						</li>
-						<?php if ($_SESSION['level'] == 'Admin'): ?>
-						<li class="nav-item <?= @$pk_active . @$pd_active ?> submenu">
-							<a data-toggle="collapse" href="#produk">
-								<i class="fas fa-layer-group"></i>
-								<p>Jenis</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse <?= (@$pk_active || @$pd_active) ? 'show' : '' ?>" id="produk">
-								<ul class="nav nav-collapse">
-									<li class="<?= @$pk_active ?>">
-										<a href="index.php?page=produk">
-											<span class="sub-item">Katalog</span>
-										</a>
-                                    </li>
-                                    <li class="<?= @$pd_active ?>">
-										<a href="index.php?page=diskon">
-											<span class="sub-item">Diskon</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li>
+						<?php if ($_SESSION['level'] == 'Admin') : ?>
+							<li class="nav-item <?= @$pk_active . @$pd_active ?> submenu">
+								<a data-toggle="collapse" href="#produk">
+									<i class="fas fa-layer-group"></i>
+									<p>Jenis</p>
+									<span class="caret"></span>
+								</a>
+								<div class="collapse <?= (@$pk_active || @$pd_active) ? 'show' : '' ?>" id="produk">
+									<ul class="nav nav-collapse">
+										<li class="<?= @$pk_active ?>">
+											<a href="index.php?page=produk">
+												<span class="sub-item">Katalog</span>
+											</a>
+										</li>
+										<li class="<?= @$pd_active ?>">
+											<a href="index.php?page=diskon">
+												<span class="sub-item">Diskon</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
 						<?php endif; ?>
 						<li class="nav-item <?= @$ps_active ?>">
 							<a href="index.php?page=pesanan">
@@ -159,12 +155,6 @@
 							<a href="index.php?page=laporan">
 								<i class="fas fa-file-contract"></i>
 								<p>Laporan</p>
-							</a>
-						</li>
-						<li class="nav-item <?= @$j_active ?>">
-							<a href="index.php?page=jurnal">
-								<i class="fas fa-file"></i>
-								<p>Jurnal</p>
 							</a>
 						</li>
 					</ul>
@@ -180,7 +170,7 @@
 			<footer class="footer">
 				<div class="container-fluid">
 					<div class="copyright ml-auto">
-						2019, Created By <?= $info_toko['nama_toko'] ?>
+						2020, Created By Dicuciin
 						<!-- 2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.themekita.com">ThemeKita</a> -->
 					</div>
 				</div>
@@ -199,7 +189,7 @@
 
 	<!-- jQuery Scrollbar -->
 	<script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-	
+
 	<!-- Datatables -->
 	<script src="../assets/js/plugin/datatables/datatables.min.js"></script>
 
@@ -216,7 +206,7 @@
 	<script src="../assets/js/atlantis.min.js"></script>
 
 	<!-- TinyMCE -->
-    <script src="../assets/vendor/tinymce/tinymce.min.js"></script>
+	<script src="../assets/vendor/tinymce/tinymce.min.js"></script>
 
 	<!-- Custom JS -->
 	<script src="../assets/js/main.js"></script>
@@ -224,26 +214,28 @@
 	<script>
 		$(document).ready(function() {
 			var BASE_URL = '<?= 'http://' . $_SERVER['HTTP_HOST'] . str_replace('operator/' . basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']) ?>'; // use your own base url
-            tinymce.init({
-                selector: ".texteditor",
-                theme: "modern",
-                // width: 680,
-                height: 500,
-                relative_urls: false,
-                remove_script_host: false,
-                // document_base_url: BASE_URL,
-                plugins: [
-                    "advlist autolink link image lists charmap print preview hr anchor pagebreak",
-                    "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
-                    "table contextmenu directionality emoticons paste textcolor responsivefilemanager code"
-                ],
-                toolbar1: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | styleselect",
-                toolbar2: "| responsivefilemanager | link unlink anchor | image media | forecolor backcolor  | print preview code ",
-                image_advtab: true,
-                external_filemanager_path: BASE_URL + "assets/vendor/filemanager/",
-                filemanager_title: "Media Gallery",
-                external_plugins: { "filemanager": BASE_URL + "assets/vendor/filemanager/plugin.min.js" }
-            });
+			tinymce.init({
+				selector: ".texteditor",
+				theme: "modern",
+				// width: 680,
+				height: 500,
+				relative_urls: false,
+				remove_script_host: false,
+				// document_base_url: BASE_URL,
+				plugins: [
+					"advlist autolink link image lists charmap print preview hr anchor pagebreak",
+					"searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
+					"table contextmenu directionality emoticons paste textcolor responsivefilemanager code"
+				],
+				toolbar1: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | styleselect",
+				toolbar2: "| responsivefilemanager | link unlink anchor | image media | forecolor backcolor  | print preview code ",
+				image_advtab: true,
+				external_filemanager_path: BASE_URL + "assets/vendor/filemanager/",
+				filemanager_title: "Media Gallery",
+				external_plugins: {
+					"filemanager": BASE_URL + "assets/vendor/filemanager/plugin.min.js"
+				}
+			});
 		});
 
 		if (data) {
@@ -256,5 +248,6 @@
 		}
 	</script>
 </body>
+
 </html>
 <?php unset($_SESSION['pesan']) ?>

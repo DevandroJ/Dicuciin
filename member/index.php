@@ -1,26 +1,28 @@
 <?php include_once 'sistem/content.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Maaci Laundry</title>
+	<title>Dicuciin Customer Panel</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="../assets/img/logokecil.png" type="image/logokecil.png"/>
+	<link rel="icon" href="../assets/img/logokecil.png" type="image/logokecil.png" />
 
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/atlantis.min.css">
+	<link rel="stylesheet" href="../assets/css/atlantis.min.css">
 	<link rel="stylesheet" href="../assets/css/fonts.min.css">
-	
+
 	<!-- Custom -->
 	<link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 	<div class="wrapper">
 		<div class="main-header">
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="blue">
-				
+
 				<a href="index.php" class="logo text-white text-uppercase" href="../">
 					<img src="../assets/img/logo23.png" alt="Logo Image" style="width: 90%">
 				</a>
@@ -39,10 +41,10 @@
 
 			<!-- Navbar Header -->
 			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
-				
+
 				<div class="container-fluid">
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
-						
+
 					</ul>
 				</div>
 			</nav>
@@ -50,7 +52,7 @@
 		</div>
 
 		<!-- Sidebar -->
-		<div class="sidebar sidebar-style-2">			
+		<div class="sidebar sidebar-style-2">
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
 					<div class="user">
@@ -115,7 +117,7 @@
 			<footer class="footer">
 				<div class="container-fluid">
 					<div class="copyright ml-auto">
-						2019, Created By <?= $info_toko['nama_toko'] ?>
+						2020, Created By Dicuciin
 						<!-- 2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.themekita.com">ThemeKita</a> -->
 					</div>
 				</div>
@@ -134,7 +136,7 @@
 
 	<!-- jQuery Scrollbar -->
 	<script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-	
+
 	<!-- Datatables -->
 	<script src="../assets/js/plugin/datatables/datatables.min.js"></script>
 
@@ -159,5 +161,6 @@
 		})
 	</script>
 </body>
+
 </html>
 <?php unset($_SESSION['pesan']) ?>
